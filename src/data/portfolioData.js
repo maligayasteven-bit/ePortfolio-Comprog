@@ -8,7 +8,7 @@ export const PROFILE = {
   bio: "First Year BSIT Student – An aspiring IT professional who is interested in technology, programming, and game development. I enjoy learning how computers and software work and hope to develop my skills and gain experience throughout my college journey.",
   photo: photos,
   activities: ["FlowChart", "Coding"],
-  responsibilities: "Inputting of answers of the team into document to be exported",
+  responsibilities: "Take ownership of my learning, that spans academic performance, personal conduct.",
 };
 
 export const INFO = [
