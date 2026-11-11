@@ -1,0 +1,10 @@
+.tabs { display: flex; align-items: center; justify-content: space-between; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 8px; margin: 48px 0 20px; flex-wrap: wrap; gap: 8px; }
+.tabs > div { display: flex; gap: 6px; flex-wrap: wrap; }
+.tabs button { background: none; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; }
+.tabs button.on { background: var(--brand); color: #fff; }
+.tabs > span { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--muted); padding-right: 10px; }
+.grp { display: flex; align-items: center; justify-content: space-between; margin: 8px 0 14px; }
+.grp > div { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 600; }
+.pill { background: var(--brand); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .04em; padding: 4px 12px; border-radius: 6px; }
+.count { background: var(--brand-soft); color: #3730a3; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; }
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }

@@ -1,0 +1,4 @@
+.foot { background: var(--bg); border-top: 1px solid var(--line); margin-top: 48px; padding: 48px 0 24px; font-size: 14px; color: var(--muted); }
+.foot .a, .foot .b { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.foot .a p { max-width: 560px; margin: 0; }
+.foot .b { margin-top: 48px; font-size: 12px; font-weight: 600; color: #1e293b; }

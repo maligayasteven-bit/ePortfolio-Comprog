@@ -1,0 +1,37 @@
+/* Universal styling: tokens, reset, and shared building blocks */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ink: #0f172a; --muted: #475569; --brand: #4f46e5;
+  --brand-soft: #e0e7ff; --bg: #f5f7ff; --line: #e5e9f7; --dark: #020617;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.ep { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--ink); background: var(--bg); min-height: 100vh; line-height: 1.5; }
+.ep button { font: inherit; cursor: pointer; border: 0; }
+.ep button, .ep a.btn { transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease; }
+.ep button:not(:disabled):hover, .ep a.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgb(15 23 42 / 14%); }
+.ep button:not(:disabled):active, .ep a.btn:active { transform: translateY(0) scale(.98); box-shadow: none; }
+.ep button:focus-visible, .ep a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .ep button, .ep a.btn { transition: none; }
+}
+
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+@media (max-width: 820px) { .wrap { padding: 0 16px; } }
+
+h1 { font-size: clamp(34px, 5vw, 56px); letter-spacing: -.03em; line-height: 1.05; margin: 18px 0 12px; font-weight: 700; }
+h1 em { font-style: normal; color: var(--brand); }
+.lead { font-size: 18px; color: var(--muted); max-width: 720px; margin: 0; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: .04em; }
+.rule { display: flex; align-items: center; gap: 10px; color: var(--brand); font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+.rule::before { content: ""; width: 32px; height: 3px; background: var(--brand); border-radius: 3px; }
+.sec { font-size: 32px; font-weight: 800; letter-spacing: -.02em; margin: 6px 0 10px; }
+
+.btn { background: var(--brand); color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; border-radius: 8px; padding: 9px 16px; font-size: 12px; font-weight: 600; }
+.btn.ghost { background: #fff; color: var(--ink); box-shadow: 0 0 0 1px var(--line); font-size: 14px; font-weight: 500; padding: 9px 14px; }
+
+.chips { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--brand-soft); color: #312e81; }
+.chip.white { background: #fff; }
+.chip.dark { background: var(--dark); color: #2dd4bf; }

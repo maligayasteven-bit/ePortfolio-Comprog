@@ -1,0 +1,4 @@
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; background: #000; color: #fff; border-radius: 16px; padding: 28px 32px; margin: 60px 0 56px; }
+.stats .lbl { color: #cbd5e1; }
+.stats .n { font-size: 40px; font-weight: 600; line-height: 1.1; margin-top: 6px; }
+.stats p { margin: 0; font-size: 14px; color: #cbd5e1; }

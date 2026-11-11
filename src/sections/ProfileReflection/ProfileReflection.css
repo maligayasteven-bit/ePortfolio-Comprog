@@ -1,0 +1,23 @@
+.about { display: grid; grid-template-columns: minmax(260px, 330px) 1fr; gap: 32px; margin: 32px 0 64px; }
+@media (max-width: 820px) { .about { grid-template-columns: 1fr; } }
+.card { background: #fff; border-radius: 18px; padding: 24px; box-shadow: 0 0 0 1px var(--line); }
+.photo { width: 100%; aspect-ratio: 4/3; border-radius: 12px; background: linear-gradient(135deg, #c7d2fe, #e0e7ff); display: grid; place-items: center; font-size: 48px; font-weight: 800; color: var(--brand); overflow: hidden; }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.name { font-size: 24px; font-weight: 600; margin: 18px 0 0; display: flex; justify-content: space-between; align-items: center; }
+.name svg { color: var(--brand); }
+.role { color: var(--brand); font-size: 14px; font-weight: 500; }
+.bio { font-size: 14px; font-weight: 600; line-height: 1.65; margin: 8px 0 18px; }
+.tag { display: inline-block; background: var(--brand-soft); color: #3730a3; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 6px; margin: 6px 6px 0 0; }
+.resp { margin-top: 18px; background: var(--bg); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--muted); }
+.resp .lbl, .phil > .lbl { color: var(--brand); }
+.phil { background: var(--bg); border-radius: 20px; padding: 36px; }
+.phil h3 { font-size: 26px; font-weight: 600; margin: 6px 0 18px; }
+.phil > p { font-size: 18px; color: var(--muted); line-height: 1.75; margin: 0 0 28px; }
+.refl { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; }
+.refl .card { padding: 18px; box-shadow: none; }
+.refl h4 { font-size: 20px; margin: 10px 0 8px; font-weight: 600; }
+.refl p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.7; }
+.refl svg { color: var(--brand); }
+.mile { margin-top: 28px; background: var(--brand); color: #fff; border-radius: 10px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+.mile small { display: block; font-size: 11px; letter-spacing: .06em; font-weight: 600; }
+.mile b { font-size: 20px; font-weight: 600; }

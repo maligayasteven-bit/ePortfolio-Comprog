@@ -1,0 +1,9 @@
+.hero { display: flex; gap: 32px; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; }
+.eval { background: var(--brand-soft); border-radius: 16px; padding: 18px; width: 340px; font-size: 13px; color: var(--muted); }
+.eval b { display: flex; justify-content: space-between; color: var(--ink); font-size: 12px; margin-bottom: 8px; }
+.eval b span { color: var(--brand); }
+.bar { height: 6px; border-radius: 9px; background: var(--brand); margin-bottom: 10px; }
+.info { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; background: #fff; border-radius: 16px; padding: 20px; margin-top: 32px; }
+.info > div { display: flex; gap: 14px; align-items: center; }
+.ico { width: 40px; height: 40px; border-radius: 10px; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; }
+.val { font-size: 18px; font-weight: 600; }
